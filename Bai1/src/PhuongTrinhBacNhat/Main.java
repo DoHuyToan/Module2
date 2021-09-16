@@ -20,7 +20,7 @@ public class Main {
 
         if(a != 0){
             double answer = (c-b)/a;
-            System.out.println("Equation pass with x = %f!\n" + answer);
+            System.out.printf("Equation pass with x = %f!\n", answer);
         } else {
             if(b == c){
                 System.out.println("The solution is all x!");
