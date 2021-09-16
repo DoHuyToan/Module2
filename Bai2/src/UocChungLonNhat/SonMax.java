@@ -11,14 +11,29 @@ public class SonMax {
 
         System.out.println("Nhập số thứ hai");
         int b = sc.nextInt();
-        int max = 1;
 
-        for(int i=1; i<=a || i<=b; i++){
-            if(a%i==0 && b%i==0){
-                max = i;
-            }
+
+        if(a==0 && b==0){
+            System.out.println("Không có ước chung lớn nhất");
         }
-        System.out.println("Ước lớn nhất của " + a + " và " + b + " là " + max);
+
+        if(a==0 && b!=0){
+            System.out.println("Ước chung lớn nhất là " + b);
+        }
+
+        if(a!=0 && b==0){
+            System.out.println("Ước chung lớn nhất là " + a);
+        }
+
+        if(a!=0 && b!=0 ){
+            int max = 1;
+            for(int i=1; i<=a || i<=b; i++){
+                if(a%i==0 && b%i==0){
+                    max = i;
+                }
+            }
+            System.out.println("Ước lớn nhất của " + a + " và " + b + " là " + max);
+        }
     }
 }
 
