@@ -30,7 +30,7 @@ public class DateMonth {
             default:
                 daysInMonth = "";
         }
-
+//equals là bằng, dùng để so sánh bằng
         if (!daysInMonth.equals("")) System.out.printf("The month '%d' has %s days!", month, daysInMonth);
         else System.out.print("Invalid input!");
 
