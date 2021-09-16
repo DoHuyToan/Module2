@@ -8,11 +8,11 @@ public class NumToString {
         int num, hundred, unit, dozen;
         System.out.println("Nhập số cần đọc vào");
         num = scanner.nextInt();
-        hundred = (num-(num%100))/100;
-        unit = num%10;
-        dozen = (num%100 - num%10)/10;
+        hundred = (num-(num%100))/100; //tìm số hàng trăm
+        unit = num%10;                 //tìm số hàng đơn vị
+        dozen = (num%100 - num%10)/10; //tìm số hàng chục
 
-        switch (hundred) {
+        switch (hundred) {             //in số hàng trăm
             case 1:
                 System.out.print("one hundred and ");
                 break;
@@ -44,7 +44,7 @@ public class NumToString {
                 System.out.println("");
         }
 
-        if(dozen == 1){
+        if(dozen == 1){          //in số hàng chục
                 switch (unit){
                     case 0:
                         System.out.print("ten");
@@ -78,7 +78,7 @@ public class NumToString {
                         break;
                 }
         } else {
-            switch (dozen){
+            switch (dozen){           //in số hàng đơn vị
                 case 0:
                     System.out.print("");
                     break;
