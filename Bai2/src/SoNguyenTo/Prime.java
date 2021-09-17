@@ -19,7 +19,6 @@ public class Prime {
                     break;
                 } i++;
             }
-
         }
         if(check)
             System.out.println(num + " is prime");
