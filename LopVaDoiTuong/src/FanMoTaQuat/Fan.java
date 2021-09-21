@@ -3,10 +3,10 @@ package FanMoTaQuat;
 public class Fan {
     //khai báo thuộc tính
     final int SLOW = 1, MEDIUM = 2, FAST = 3;
-    private int speed = SLOW;
-    private boolean on = false;
-    private double radius = 5;
-    private String color = "blue";
+    private int speed;
+    private boolean on;
+    private double radius;
+    private String color;
 
     public int getSLOW() {
         return SLOW;
@@ -57,9 +57,9 @@ public class Fan {
 
     public String toString() {
         if(getOn()){
-            return "Fan is on speed: " + getSpeed() + ", color: " + getColor() + ", radius: " + getRadius();
+            return "Fan is on " + getSpeed() + ", " + getColor() + ", " + getRadius();
         } else {
-            return "Fan is off Color: " + getColor() + " Radius: " + getRadius();
+            return "Fan is off " + getColor() + ",  " + getRadius();
         }
     }
 }
