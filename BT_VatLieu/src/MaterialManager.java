@@ -48,14 +48,11 @@ public class MaterialManager {
 
     //sửa vật liệu
 //    public void editMaterial(Material material,int index){
-//        Scanner input = new Scanner(System.in);
 //        boolean isExisted = false;
 //        for (int i=0; i<materialList.size(); i++) {
 //            if(i==index) {
 //                isExisted = true;
-//                materialList.get(i).setId() = input.nextLine();
-//                materialList.get(i).setName() = input.nextLine();
-//                materialList.get(i).setMfg() = input.
+//                materialList.get(i) = material;
 //            }
 //        }
 //        if (!isExisted) {
