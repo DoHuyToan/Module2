@@ -5,10 +5,10 @@ import java.util.Scanner;
 
 public class MaterialTest {
     public static void main(String[] args) {
-        Material materialList1 = new CrispyFlour("01","Bột 01", LocalDate.of(2021,9,26), 5000, 5);
-        Material materialList2 = new CrispyFlour("02","Bột 02", LocalDate.of(2021,9,26), 6000, 6);
-        Material materialList3 = new CrispyFlour("03","Bột 03", LocalDate.of(2021,9,26), 7000, 7);
-        Material materialList4 = new CrispyFlour("04","Bột 04", LocalDate.of(2021,9,26), 8000, 8);
+        Material materialList1 = new CrispyFlour("01","Bột 01", LocalDate.of(2021,5,26), 5000, 5);
+        Material materialList2 = new CrispyFlour("02","Bột 02", LocalDate.of(2021,6,26), 6000, 6);
+        Material materialList3 = new CrispyFlour("03","Bột 03", LocalDate.of(2021,7,26), 7000, 7);
+        Material materialList4 = new CrispyFlour("04","Bột 04", LocalDate.of(2021,8,26), 8000, 8);
         Material materialList5 = new CrispyFlour("05","Bột 05", LocalDate.of(2021,9,26), 9000, 9);
         Material materialList6 = new Meat("06", "Thịt lợn", LocalDate.of(2021,9,22), 15000, 20);
         Material materialList7 = new Meat("07", "Thịt bò", LocalDate.of(2021,9,25), 20000, 10);
