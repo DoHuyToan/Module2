@@ -23,7 +23,7 @@ public class CrispyFlour extends Material{
 
     @Override
     public String toString() {
-        return "CrispyFlour{" +
+        return "CrispyFlour { " +
                 super.toString() +
                 ", quantity=" + quantity +
                 '}';

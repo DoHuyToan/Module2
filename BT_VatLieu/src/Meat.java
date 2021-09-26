@@ -35,7 +35,7 @@ public class Meat extends Material implements Discount {
 
     @Override
     public String toString() {
-        return "Meat{" +
+        return "Meat { " +
                 super.toString() +
                 ", realMoney" + getRealMoney() +
                 ", weight=" + weight +

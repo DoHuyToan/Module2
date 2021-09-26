@@ -49,10 +49,10 @@ public class MaterialTest {
         System.out.println();
 
         //Sửa phần tử trong Material
-        System.out.println("Sửa phần tử");
-        Scanner input = new Scanner(System.in);
-        double index = input.nextDouble();
-        materialManager.editMaterial(materialList10, index);
-        materialManager.displayMaterial();
+//        System.out.println("Sửa phần tử");
+//        Scanner input = new Scanner(System.in);
+//        double index = input.nextDouble();
+//        materialManager.editMaterial(materialList10, index);
+//        materialManager.displayMaterial();
     }
 }

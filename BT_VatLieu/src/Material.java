@@ -54,11 +54,10 @@ abstract public class Material {
 
     @Override
     public String toString() {
-        return "Material{" +
+        return "Material { " +
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 ", mfg=" + mfg +
-                ", cost=" + cost +
-                '}';
+                ", cost=" + cost;
     }
 }
