@@ -53,9 +53,9 @@ public class MaterialManager {
 //        for (int i=0; i<materialList.size(); i++) {
 //            if(i==index) {
 //                isExisted = true;
-//                materialList.set(i).getId() = input.nextLine();
-//                materialList.set(i).getName() = input.nextLine();
-//                materialList.set(i).getMfg() = input.
+//                materialList.get(i).setId() = input.nextLine();
+//                materialList.get(i).setName() = input.nextLine();
+//                materialList.get(i).setMfg() = input.
 //            }
 //        }
 //        if (!isExisted) {
