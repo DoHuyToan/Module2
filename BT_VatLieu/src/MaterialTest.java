@@ -36,6 +36,11 @@ public class MaterialTest {
         materialManager.displayMaterial();
         System.out.println();
 
+        //Tổng tiền sau chiết khấu
+        System.out.println("Tổng tiền sau chiết khấu");
+        System.out.println(materialManager.totalRealMoney());
+        System.out.println();
+
         //Thêm phẩn tử vào Material
         System.out.println("Thêm phần tử vào");
         materialManager.addMaterial(materialList10);
@@ -47,6 +52,7 @@ public class MaterialTest {
         materialManager.removeMaterial(materialList4);
         materialManager.displayMaterial();
         System.out.println();
+
 
         //Sửa phần tử trong Material
 //        System.out.println("Sửa phần tử");

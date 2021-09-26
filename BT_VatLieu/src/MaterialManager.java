@@ -23,6 +23,19 @@ public class MaterialManager {
         }
     }
 
+    //tính tổng tiền sau chiếu khấu
+    public double totalRealMoney(){
+        double sum1 = 0;
+        double sum2 = 0;
+        for (Material material: materialList) {
+            if(material instanceof CrispyFlour){
+                sum1 += ((CrispyFlour) material).getRealMoney();
+            }
+            else sum2 += ((Meat)material).getRealMoney();
+        }
+        return sum1 + sum2;
+    }
+
     //thêm vật liệu
     public  void addMaterial(Material material){
         materialList.add(material);
@@ -34,21 +47,21 @@ public class MaterialManager {
     }
 
     //sửa vật liệu
-    public void editMaterial(Material material,int index){
-        Scanner input = new Scanner(System.in);
-        boolean isExisted = false;
-        for (int i=0; i<materialList.size(); i++) {
-            if(i==index) {
-                isExisted = true;
-                materialList.set(i).getId() = input.nextLine();
-                materialList.set(i).getName() = input.nextLine();
-                materialList.set(i).getMfg() = input.
-            }
-        }
-        if (!isExisted) {
-            System.out.printf("id = %d not existed.\n", index);
-        } else {
-            System.out.println(materialList);
-        }
-    }
+//    public void editMaterial(Material material,int index){
+//        Scanner input = new Scanner(System.in);
+//        boolean isExisted = false;
+//        for (int i=0; i<materialList.size(); i++) {
+//            if(i==index) {
+//                isExisted = true;
+//                materialList.set(i).getId() = input.nextLine();
+//                materialList.set(i).getName() = input.nextLine();
+//                materialList.set(i).getMfg() = input.
+//            }
+//        }
+//        if (!isExisted) {
+//            System.out.printf("id = %d not existed.\n", index);
+//        } else {
+//            System.out.println(materialList);
+//        }
+//    }
 }
