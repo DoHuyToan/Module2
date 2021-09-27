@@ -1,17 +1,19 @@
-package interfaceComparable_HinhHoc;
+package compararator;
 
-public class Circle extends Shape{
+public class Circle {
+    private String color = "green";
+    private boolean filled = true;
     private double radius = 1.0;
 
-    public Circle() {
-    }
+    public Circle(){}
 
     public Circle(double radius) {
         this.radius = radius;
     }
 
-    public Circle(double radius, String color, boolean filled) {
-        super(color, filled);
+    public Circle(String color, boolean filled, double radius) {
+        this.color = color;
+        this.filled = filled;
         this.radius = radius;
     }
 
@@ -21,6 +23,22 @@ public class Circle extends Shape{
 
     public void setRadius(double radius) {
         this.radius = radius;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public boolean isFilled() {
+        return filled;
+    }
+
+    public void setFilled(boolean filled) {
+        this.filled = filled;
     }
 
     public double getArea() {
@@ -33,9 +51,10 @@ public class Circle extends Shape{
 
     @Override
     public String toString() {
-        return "A Circle with radius="
-                + getRadius()
-                + ", which is a subclass of "
-                + super.toString();
+        return "Circle{" +
+                "color='" + color + '\'' +
+                ", filled=" + filled +
+                ", radius=" + radius +
+                '}';
     }
 }
