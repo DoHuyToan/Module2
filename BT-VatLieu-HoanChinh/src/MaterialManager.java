@@ -9,7 +9,7 @@ public class MaterialManager {
         this.materialist = materialist;
     }
 
-    public void displayMaterial(){
+    public void displayMaterial(Material[] materialist){
         for (int i=0; i<materialist.length; i++){
             System.out.println(materialist[i]);
         }

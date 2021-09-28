@@ -18,21 +18,30 @@ public class MaterialTest {
         MaterialManager KA = new MaterialManager();
         KA.setMaterial(materialList);
 
+
         System.out.println("Thêm phần tử vào mảng");
         Material newMaterial = newMaterial();
         KA.addNewMaterial(newMaterial);
         System.out.println(KA.getMaterial().length);
+        System.out.println("Danh scahs mảng");
+        KA.displayMaterial(materialList);
         System.out.println();
 
         System.out.println("Xóa phần tử trong mảng");
         KA.deleteMaterial(4);
         System.out.println(KA.getMaterial().length);
+        KA.displayMaterial(materialList);
+        System.out.println();
+
+        System.out.println("Sửa phần tử trong mảng");
+        KA.editMaterial(newMaterial, 5);
+        KA.displayMaterial(materialList);
 
     }
 
 
 
-    public static Material newMaterialCrispyFlour (){
+    public static Material newMaterial(){
         Scanner input = new Scanner(System.in);
         System.out.println("Nhập id");
         String id = input.nextLine();
@@ -56,8 +65,8 @@ public class MaterialTest {
 //        System.out.println("2. Name");
 //        System.out.println("3. manufacturingDate");
 
-        Material newMaterialCrispyFlour = new CrispyFlour(id,name, LocalDate.of(year,month,day), cost, quantity);
-        return newMaterialCrispyFlour;
+        Material newMaterial = new CrispyFlour(id,name, LocalDate.of(year,month,day), cost, quantity);
+        return newMaterial;
     }
 
 }
