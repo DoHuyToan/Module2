@@ -32,7 +32,7 @@ public class MaterialTest {
 
 
 
-    public static Material newMaterial (){
+    public static Material newMaterialCrispyFlour (){
         Scanner input = new Scanner(System.in);
         System.out.println("Nhập id");
         String id = input.nextLine();
@@ -49,16 +49,15 @@ public class MaterialTest {
         int cost = input1.nextInt();
         System.out.println("Nhập chất lượng");
         int quantity = input1.nextInt();
+//
+//        int choose = input1.nextInt();
+//        System.out.println("Menu");
+//        System.out.println("1. Id");
+//        System.out.println("2. Name");
+//        System.out.println("3. manufacturingDate");
 
-        int choose = input1.nextInt();
-        System.out.println("Menu");
-        System.out.println("1. Id");
-        System.out.println("2. Name");
-        System.out.println("3. manufacturingDate");
-
-
-        Material newMaterial = new CrispyFlour(id,name, LocalDate.of(2021,7,5), 15000, 25);
-        return newMaterial;
+        Material newMaterialCrispyFlour = new CrispyFlour(id,name, LocalDate.of(year,month,day), cost, quantity);
+        return newMaterialCrispyFlour;
     }
 
 }
